@@ -1,12 +1,19 @@
 @import "nullstyle.scss";
+@import "slider.scss";
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Varela+Round&display=swap');
 
 $pink: #de5d5d;
 
 body{
     font-family: 'Varela Round', sans-serif;
     height: 200vh;
+    line-height: 1.2;
 }
+// .container{
+//     max-width: 1170px !important;
+//     padding: 0;
+// }
 header{
     background-color: $pink;
     .container{
@@ -19,32 +26,159 @@ header{
             height: 65px;
             display: flex;
             justify-content: space-between;
+            align-items: end;
             img{
             padding-top: 34px;
             
             }
             .navbar {
                 padding: 0;
-                text-align: end;
+                padding-bottom: 1px;
                 ul{
-                width: 760px;
+                width: 761px;
                 color: white;
                 display: flex;
                 justify-content: space-between;
+                position: relative;
+                .nav__active{
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: -42px;
+                        left: -24px;
+                        width: 82px;
+                        height: 5px;
+                        background-color: #fff;
+                    }
+                }
                     li{
                         font-size: 18px;
                         line-height: 1.2;
                         font-weight: 400;
-                        color: #ffffff;
+                        
+                        a{
+                            color: #ffffff;
+                        }
+                        &:not(:last-child){
+                            margin-right: 42px;
+                        }
+                        &:nth-child(3),
+                        &:nth-child(5){
+                            margin-right: 43px;
+                        }
+                        &:nth-child(4){
+                            margin-right: 46px;
+                        }
+                        &:nth-child(6){
+                            margin-right: 39px;
+                        }
                     }
+                    
                 }
             }
         }
     }
     .banner__container{
         width: min-content;
-        img{
-            margin: 0 auto;
+        height: 722px;
+        margin: auto;
+        position: relative;
+        color: #fff;
+        overflow: hidden;
+        padding: 34px;
+        padding-right: 15px;
+        &::before{
+            position: absolute;
+            bottom: -250px;
+            height: 650px;
+            width: 150%;
+            margin-left: -300px;
+            content: "";
+            -webkit-filter: blur(100px);
+            filter: blur(150px);
+            z-index: 2;
+            background-color: #de5d5d;
+        }
+        h1{
+            position: absolute;
+            top: 230px;
+            left: 376px;
+            font-size: 88px;
+            font-family: 'Montserrat' ,sans-serif;
+            line-height: 1.2;
+            font-weight: 600;
+            letter-spacing: 1.15px;
+            z-index: 3;
+        }
+        .cta{
+            position: absolute;
+            top: 408px;
+            left: 530px;
+            width: 543px;
+            display: flex;
+            justify-content: space-between;
+            img{
+                float: left;
+                margin: 0;
+                margin-left: 10px;
+            }
+            p{
+                font-size: 30px;
+                line-height: 1.2;
+                margin-left: 65px;
+                margin-top: 8px;
+            }
+            .appstore,
+            .playmarket{
+                width: 257px;
+                height: 77px;
+                border: 3px solid white;
+                text-align: center;
+                margin: 0;
+                padding: 10px;
+                border-radius: 5%;
+                z-index: 3;
+            }
         }
     }
+}
+main{
+    .whyama{
+        background-color: #fff;
+        padding-top: 100px;
+        font-family: 'Montserrat' ,sans-serif;
+        h2{
+            text-align: center;
+            font-size: 48px;
+            margin-left: 10px;
+        }
+        .ama__features{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 61px;
+            gap: 90px;
+            .feature{
+                text-align: center;
+                .feature__text{
+                    padding: 5px;
+                }
+                h3{
+                    margin-top: 40px;
+                    margin-left: -5px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    color: #666666;
+                }
+                p{
+                    font-family: 'Varela Round';
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .share_instantly{
+        height: 734px;
+    }
+
 }
