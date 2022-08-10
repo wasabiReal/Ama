@@ -4,6 +4,7 @@
 }
 .slider__item{
     color: white;
+    max-width: max-content;
 }
 .slider .slick-dots{
     position: absolute;
@@ -35,4 +36,21 @@
 }
 .slick-list{
     overflow: hidden;
+}
+.share_instantly{
+    .slider .slick-dots{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 35%;
+        left: 53%;
+        padding: 3px;
+        margin-left: -28px;
+    }
+}
+.new_features{
+    .slider{
+        color: red;
+    }
 }
