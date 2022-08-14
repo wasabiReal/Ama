@@ -7,7 +7,6 @@ $pink: #de5d5d;
 
 body{
     font-family: 'Varela Round', sans-serif;
-    height: 1000vh;
     line-height: 1.2;
 }
 // .container{
@@ -256,7 +255,7 @@ main{
                 padding-right: 20px;
             }
             .youtube__button{
-                margin-top: 52px;
+                margin-top: 51px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -406,21 +405,92 @@ main{
                 height: 519px;
                 display: flex;
                 overflow: hidden;
+                flex-direction: row;
+                position: relative;
                 img{
-                    transform: scale(1.2);
+                    transform: scale(1.235);
                 }
+                &:hover {
+                    height: 557px;
+                    margin-top: -38px;
+                    transition: all 0.5s ease-in-out;
+                    .photo__likes{
+                        display: flex;
+                        bottom: 0px;
+                        transition: all 0.6s ease-in-out;
+                    }
+                }
+                
             }
             .photo1{
-                width: 432px;
+                width: 438px;
+                img{
+                    margin-left: 22px;
+                    transform: scale(1.235);
+                }
             }
             .photo2{
-                width: 518px;
+                width: 545px;
+                img{
+                    margin-top: 72px;
+                    margin-left: 56px;
+                    transform: scale(1.6);
+                }
             }
             .photo3{
-                width: 519px;
+                width: 546px;
+                img{
+                    transform: scale(1.24);
+                    margin-left: -158px;
+                    margin-top: 46px;
+                }
             }
             .photo4{
-                width: 499px;
+                width: 472px;
+                img{
+                    transform: scale(1.36);
+                    margin-left: -69px;
+                    margin-top: 27px;
+                }
+            }
+            .photo__likes{
+                display: none;
+                height: 88px;
+                color: white;
+                position: absolute;
+                background-color: #151515;
+                bottom: -88px;
+                width: 100%;
+                padding: 25px;
+                justify-content: space-between;
+                .quote_likes{
+                    margin-left: 7px;
+                    margin-top: 7px;
+                }
+                .likes{
+                    display: flex;
+                    margin-top: 5px;
+                    margin-right: 16px;
+                    img{
+                    margin: 0;
+                    float: left;
+                    margin-right: 10px;
+                    }
+                    p{
+                        font-size: 23px;
+                        font-family: 'Montserrat',sans-serif;
+                        color: #de5d5d;
+                        margin: 0;
+                        font-weight: 600;
+                        margin-right: -5px;
+                        margin-top: -2px;
+                    }
+                }
+                p{
+                    font-size: 17px;
+                    font-family: 'Montserrat' ,sans-serif;
+                }
+                
             }
         }
     }
@@ -433,9 +503,18 @@ main{
             padding-top: 124px;
             margin-left: 67px;
             gap: 150px;
+            position: relative;
             img{
                 margin-top: 100px;
                 height: 100%;
+            }
+            .shadow{
+                position: absolute;
+                width: 370px;
+                height: 384px;
+                opacity: 0.05;
+                top: 128px;
+                left: 16px;
             }
             .content__text{
                 color: #fff;
@@ -444,9 +523,9 @@ main{
                     font-family: 'Montserrat' ,sans-serif;
                     font-size: 48px;
                     font-weight: 600;
-                    margin-left: 6px;
-                    margin-top: 45px;
-                    letter-spacing: 0.5px;
+                    margin-left: 8px;
+                    margin-top: 44px;
+                    letter-spacing: 0.4px;
                 }
                 p{
                     font-family: 'Varela Round';
@@ -530,6 +609,7 @@ footer .footer__container{
     display: flex;
     justify-content: space-between;
     margin: 0 350px;
+    height: 225px;
     .right__content,
     .left__content{
         margin-top: 55px;
@@ -548,14 +628,36 @@ footer .footer__container{
         
     }
     .right__content{
+        form{
+            margin-right: 64px;
+        }
         label{
+            margin-top: 4px;
+            letter-spacing: 0.1px;
             font-size: 16px;
             line-height: 24px;
             font-weight: 400;
             color: #666666;
         }
         input[type = "email"] {
-            border: 2px solid darkcyan;
+            border: 1px solid #666666;
+            width: 310px;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 7px;
+            letter-spacing: 1.3px;
+        }
+        input[type = "submit"] {
+            border: 1px solid $pink;
+            width: 101px;
+            border-radius: 6px;
+            height: 48px;
+            margin-left: 8px;
+            color: white;
+            background-color: $pink;
+            letter-spacing: 1px;
         }
     }
 }
+
+@import "adaptive.scss";

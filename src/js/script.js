@@ -3,8 +3,8 @@ $(document).ready(function(){
         arrows: false,
         dots: true,
         autoplay:false,
-        autoplaySpeed: 10000,
-        speed: 600,
+        autoplaySpeed: 4000,
+        speed: 800,
         infinite: true,
         cssEase: 'ease-in-out',
         touchThreshold: 300

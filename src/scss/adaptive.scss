@@ -1,0 +1,142 @@
+// Scss rules for 4k monitor
+@media (max-width: 2560px) {
+    main .taken_with_ama .twa__photos .photo {
+        width: 25%;
+        img{
+            width: 100%;
+            margin: 0;
+        }
+        margin: 0;
+    }
+}
+
+// large laptop
+@media (max-width: 1440px) {
+    header .slider .slider__item{
+        .iphone__banner{
+            width: 95%;
+        }
+        h1{
+            left: 310px;
+        }
+        .cta{
+            left: 450px;
+        }
+    }
+        main .taken_with_ama .twa__photos .photo {
+            height: 350px;
+            &:hover {
+                height: 388px;
+                margin-top: -38px;
+                transition: all 0.5s ease-in-out;
+                .photo__likes{
+                    display: flex;
+                    bottom: 0px;
+                    height: 55px;
+                    padding: 12px;
+                    .likes{
+                        margin-top: 10px;
+                        img{
+                            width: 19px;
+                            height: 15px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    footer .footer__container {
+        margin: 0 220px;
+    }
+}
+
+@media (max-width: 1180px) {
+    header .slider .slider__item{
+        .iphone__banner{
+            width: 100%;
+            margin-top: 50px;
+        }
+        h1{
+            left: 280px;
+            font-size: 66px;
+        }
+        .cta{
+            left: 320px;
+        }
+    }
+    header .container .topbar__container{
+        justify-content: space-around;
+    }
+    header .banner__container{
+        height: 600px;
+    }
+    main .compatibility .compatibility__content .compatibility__mobiles p{
+            width: 355px;
+    }
+    main .download .download__content {
+        margin-left: 0;
+    }
+    main .new_features .slider__comments .phone__features{
+        width: 415px;
+        gap: 15px;
+        .phone__features__text p {  
+            font-size: 14px;
+        }
+    }
+    main .share_instantly{
+        .image{
+            img{
+                width: 100%;
+                margin-left: 100px;
+            }
+        }
+    }
+    main .phone__picture img{
+        margin-left: 10px;
+    }
+    main .taken_with_ama .twa__photos .photo {
+        height: 250px;
+        &:hover {
+            height: 268px;
+            margin-top: -18px;
+            transition: all 0.5s ease-in-out;
+        }
+        .quote_likes{
+            font-size: 12px;
+            margin: 10px 0;
+        }
+    }
+    footer .footer__container{
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 1180px) {
+    header .slider .slider__item{
+        .iphone__banner{
+            width: 100%;
+            margin-top: 50px;
+        }
+        h1{
+            left: 200px;
+            font-size: 66px;
+        }
+        .cta{
+            left: 240px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main{
+        .whyama__slider{
+            display: flex;
+            flex-direction: column;
+        }
+        .whyama{
+            display: none;
+        }
+    }
+}
