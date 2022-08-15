@@ -11,3 +11,18 @@ $(document).ready(function(){
     });
 });
 
+$('li.nav-item').hover(
+    function(){ $(this).addClass('nav__active') },
+    function(){ $(this).removeClass('nav__active') }
+);
+
+$('.compatibility__ios').after('<hr/>');
+
+function burger(){
+    if (document.getElementById("burger__nav").style.display == 'none'){
+        document.getElementById("burger__nav").style.display = 'block';
+    }
+    else {
+        document.getElementById("burger__nav").style.display = 'none';
+    }
+}

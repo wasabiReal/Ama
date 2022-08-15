@@ -30,6 +30,9 @@ header{
             padding-top: 34px;
             
             }
+            .burger__menu{
+                display: none;
+            }
             .navbar {
                 padding: 0;
                 padding-bottom: 1px;
@@ -43,8 +46,8 @@ header{
                     &::before{
                         content: "";
                         position: absolute;
-                        top: -42px;
-                        left: -24px;
+                        margin-left: -24px;
+                        margin-top: -42px;
                         width: 82px;
                         height: 5px;
                         background-color: #fff;
@@ -120,13 +123,14 @@ header{
             img{
                 float: left;
                 margin: 0;
-                margin-left: 10px;
+                margin-top: -1px;
+                margin-left: 9px;
             }
             p{
                 font-size: 30px;
                 line-height: 1.2;
                 margin-left: 65px;
-                margin-top: 8px;
+                margin-top: 6px;
             }
             .appstore,
             .playmarket{
@@ -407,18 +411,24 @@ main{
                 overflow: hidden;
                 flex-direction: row;
                 position: relative;
+
+                transition: all 0.5s ease-in-out;
                 img{
                     transform: scale(1.235);
                 }
-                &:hover {
+                @media (min-width: 800px) {
+                    &:hover {
                     height: 557px;
                     margin-top: -38px;
-                    transition: all 0.5s ease-in-out;
                     .photo__likes{
                         display: flex;
                         bottom: 0px;
-                        transition: all 0.6s ease-in-out;
+                        
                     }
+                }
+                .photo__likes{
+                    transition: all 0.2s ease;
+                }
                 }
                 
             }
@@ -454,7 +464,7 @@ main{
                 }
             }
             .photo__likes{
-                display: none;
+                display: flex;
                 height: 88px;
                 color: white;
                 position: absolute;
