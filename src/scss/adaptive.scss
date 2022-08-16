@@ -73,17 +73,17 @@
                     display: flex;
                     bottom: 0px;
                     height: 55px;
-                    padding: 12px;
-                    .likes{
-                        margin-top: 10px;
-                        img{
-                            width: 19px;
-                            height: 15px;
-                        }
-                        p{
-                            font-size: 15px;
-                        }
-                    }
+                    padding: 15px;
+                    // .likes{
+                    //     margin-top: 10px;
+                    //     img{
+                    //         width: 19px;
+                    //         height: 15px;
+                    //     }
+                    //     p{
+                    //         font-size: 15px;
+                    //     }
+                    // }
                 }
             }
         }
@@ -99,11 +99,11 @@
             margin-top: 50px;
         }
         h1{
-            left: 280px;
+            left: 200px;
             font-size: 66px;
         }
         .cta{
-            left: 320px;
+            left: 27%;
         }
     }
     header .container .topbar__container{
@@ -157,51 +157,21 @@
     }
 }
 
-// @media (max-width: 1180px) {
-//     header .slider .slider__item{
-//         .iphone__banner{
-//             width: 100%;
-//             margin-top: 50px;
-//         }
-//         h1{
-//             left: 200px;
-//             font-size: 66px;
-//         }
-//         .cta{
-//             left: 245px;
-//         }
-//     }
-//     main .share_instantly{
-//         .image{
-//             img{
-//                 width: 100%;
-//                 margin-left: 100px;
-//             }
-//         }
-//         .slider .slick-dots{
-//             top: 60%;
-//             left: 50%;
-//         }
-//     }
-//     main .share_instantly .share__content .youtube__button{
-//         flex-direction: column;
-//         img{
-//             margin: 0 auto;
-//         }
-//     }
-// }
 
-@media (max-width: 768px) {
+// Tablet adaptive
+
+@media (max-width: 850px) {
     header {
         .navbar{
             display: none;
         }
         .slider .slider__item{
             h1{
-                left: 70px;
+                left: 15%;
+                font-size: 54px;
             }
             .cta{
-                left: 115px;
+                left: 15%;
             }
         }
     }
@@ -256,7 +226,19 @@
                 display: block;
                 margin: 0 auto;
             }
+            .content__text .donwload__buttons{
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                .appstore,
+                .playmarket{
+                    margin: 0 auto;
+                }
+            }
             .shadow{
+                display: none;
                 opacity: 0;
             }
             h2,
@@ -273,33 +255,40 @@
             .ama__features{
                 flex-direction: column;
                 height: max-content;
-                margin: 70px 150px;
+                margin: 70px auto;
                 gap: 30px;
                 .feature{
                     padding: 0 21px;
-                    margin-left: 12px;
+                    margin: 0;
                 }
-                .feature__filters img{
-                    margin-left: 0px;
-                }
-                .feature__text{
-                    width: 350px;
+                .feature__filters img,
+                .feature__autofocus img,
+                .feature__touchid img {
+                    margin: 0;
                 }
             }
         }
     }
     main .share_instantly{
         height: max-content;
-        .image img{
+        .row .image {
+            margin: 30px auto;
+            display: block;
+            img{
             width: 50%;
-            margin: 0 280px;
+            display: block;
+            margin: 0 auto;
+            }
         }
         .slider .slick-dots{
             top: 95%;
         }
+        .row{
+            flex-direction: column-reverse;
+        }
         .share__content{
             margin: 0 auto;
-            margin-bottom: 100px;
+            margin-top: 100px;
             padding: 0 10%;
             text-align: center;
             p{
@@ -326,16 +315,21 @@
             text-align: center;
         }
         .slider__comments{
-            padding: 0 22%;
             .slider{
                 width: 415px;
-                margin: 0;
+                display: block;
+                margin: 0 auto;
             }
         }
         .phone__picture img{
             margin: 0 auto;
             display: block;
+            width: 50%;
         }
+    }
+    main .taken_with_ama .twa__text{
+        margin-top: 40px;
+        margin-left: auto;
     }
     main .taken_with_ama .twa__photos{
         display: grid;
@@ -344,8 +338,13 @@
         padding: 10px 20px;
         .photo{
             width: 100%;
-
             height: auto;
+            &:hover{
+                transform: scale(1.01);
+                height: auto;
+                margin-top: 0;
+                transition: all 0.8s ease;
+            }
             img{
                 width: 100%;
             }
@@ -394,5 +393,161 @@
         .left__content{
             margin-top: 0px;
         }
+    }
+}
+
+@media (max-width: 450px) {
+    header .slider .banner__container{
+        padding: 10px;
+        h1{
+            margin: 0;
+            left: 15%;
+            top: 20%;
+            font-size: 30px;
+        }
+        .cta{
+            left:0;
+            right:0;
+            top: 50%;
+            margin-left:auto;
+            margin-right:auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: fit-content;
+            margin-bottom: 200px;
+            .appstore,
+            .playmarket{
+                width: fit-content;
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -100px;
+            height: 650px;
+            width: 150%;
+            margin-left: -50px;
+        }
+    }
+    main .whyama{
+        padding-top: 50px;
+        h2{
+            font-size: 32px;
+        }
+        .ama__features {
+            margin: 30px auto;
+            .feature{
+                img{
+                    width: 30%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    main .new_features {
+        .slider__comments {
+            .slider{
+                width: 300px;
+            }
+            .phone__features{
+                width: 300px;
+                height: 250px;
+                text-align: left;
+                img{
+                    margin: 0;
+                }
+                .phone__features__text{ 
+                    h4{
+                        margin: 0;
+                        font-size: 16px;
+                    }
+                    p{
+                        margin: 0;
+                        padding: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .phone__picture{
+            img{
+                width: 50%;
+            }
+        }
+    }
+    
+    main .taken_with_ama .twa__text{
+        margin-left: auto;
+        h3{
+            font-size: 32px;
+        }
+        p{
+        width: fit-content;
+        }
+    }
+    main .taken_with_ama .twa__photos{
+        grid-template-columns: 1fr;
+    }
+    main .taken_with_ama .twa__photos .photo .photo__likes{
+        padding: 15px;
+        img{
+            width: 14px;
+            height: 12px;
+        }
+        p{
+            font-size: 14px;
+            margin: 0;
+        }
+        .likes{
+            margin: auto 0;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    main .compatibility .compatibility__content{
+        padding: 50px 10px;
+    }
+    main .download .download__content {
+        .download_img{
+            width: 30%;
+            height: 30%;
+        }
+        .content__text{
+            h2{
+                font-size: 42px;
+            }
+        }
+    }
+    main .compatibility .compatibility__content .compatibility__mobiles{
+        .compatibility__ios img{
+            width: 40%;
+        }
+        .compatibility__android img{
+            width: 60%;
+        }
+    }
+    footer .footer__container{
+        height: auto;
+        input[type="submit"]{
+            margin: 20px 0;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    header .slider .banner__container{
+        h1{
+            left: 10%;
+            font-size: 26px;
+        }
+    }
+    header .slider .banner__container .cta{
+        top: 45%;
+        gap: 30px;
+    }
+    footer .footer__container .right__content input[type=email]{
+        width: min-content;
     }
 }
