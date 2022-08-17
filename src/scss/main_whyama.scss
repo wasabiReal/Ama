@@ -17,61 +17,60 @@ main .whyama{
             text-align: center;
 
         }
+        h3{
+            margin-top: 36px;
+            margin-left: -10px;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+            color: $p_color;
+            margin-bottom: 0;
+        }
+        img{
+            width: 230px;
+            height: 230px;
+        }
+        p{
+            font-family: 'Varela Round';
+            font-size: 16px;
+            padding: 0 30px;
+            line-height: 1.5;
+        }
+        .feature__autofocus{
             h3{
-                margin-top: 36px;
-                margin-left: -10px;
-                font-size: 18px;
-                line-height: 24px;
-                font-weight: 600;
-                color: $p_color;
-                margin-bottom: 0;
+                margin-left: 9px;
+                margin-top: 38px;
             }
             img{
-                width: 230px;
-                height: 230px;
+                margin-right: -25px;
+                margin-top: -2px;
             }
-            p{
-                font-family: 'Varela Round';
-                font-size: 16px;
-                padding: 0 30px;
-                line-height: 1.5;
+            .feature__text p{
+                margin-left: 13px;
+                padding: 0px 10px;
             }
-            .feature__autofocus{
-                h3{
-                    margin-left: 9px;
-                    margin-top: 38px;
-                }
-                img{
-                    margin-right: -25px;
-                    margin-top: -2px;
-                }
-                .feature__text p{
-                    margin-left: 13px;
-                    padding: 0px 10px;
-                }
+        }
+        .feature__touchid{
+            padding: 0 21px;
+            margin-left: 12px;
+            h3{
+                margin-left: -4px;
             }
-            .feature__touchid{
-                padding: 0 21px;
-                margin-left: 12px;
-                h3{
-                    margin-left: -4px;
-                }
-                .feature__text p{
-                    // margin-left: 15px;
-                    padding: 0px 20px;
-                }
+            .feature__text p{
+                padding: 0px 20px;
             }
-            .feature__filters{
-                h3{
-                    margin-left: -13px;
-                }
-                img{
-                    margin-left: -13px;
-                }
-                .feature__text p{
-                    margin-right: 11px;
-                    padding: 0px 17px;
-                }
+        }
+        .feature__filters{
+            h3{
+                margin-left: -13px;
             }
+            img{
+                margin-left: -13px;
+            }
+            .feature__text p{
+                margin-right: 11px;
+                padding: 0px 17px;
+            }
+        }
     }
 }

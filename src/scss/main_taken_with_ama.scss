@@ -29,7 +29,6 @@ main .taken_with_ama{
             overflow: hidden;
             flex-direction: row;
             position: relative;
-
             transition: all 0.3s ease-in-out;
             img{
                 transform: scale(1.235);
@@ -47,7 +46,6 @@ main .taken_with_ama{
                 transition: all 0.2s ease;
                 }
             }
-            
         }
         .photo1{
             width: 438px;
@@ -117,7 +115,6 @@ main .taken_with_ama{
                 font-size: 17px;
                 font-family: 'Montserrat' ,sans-serif;
             }
-            
         }
     }
 }
