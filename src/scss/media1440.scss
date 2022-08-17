@@ -1,0 +1,47 @@
+// large laptop
+@media (max-width: 1440px) {
+    header .slider .slider__item{
+        .iphone__banner{
+            width: 95%;
+        }
+        h1{
+            left: 310px;
+        }
+        .cta{
+            left: 450px;
+        }
+    }
+        main .taken_with_ama .twa__photos .photo {
+            height: 350px;
+            width: 25%;
+            img{
+                margin: 0;
+            }
+            @media (min-width: 850px){
+                &:hover {
+                height: 388px;
+                margin-top: -38px;
+                transition: all 0.5s ease-in-out;
+                .photo__likes{
+                    display: flex;
+                    bottom: 0px;
+                    height: 55px;
+                    padding: 15px;
+                    // .likes{
+                    //     margin-top: 10px;
+                    //     img{
+                    //         width: 19px;
+                    //         height: 15px;
+                    //     }
+                    //     p{
+                    //         font-size: 15px;
+                    //     }
+                    // }
+                }
+            }
+        }
+        }
+    footer .footer__container {
+        margin: 0 140px;
+    }
+}

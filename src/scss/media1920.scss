@@ -1,0 +1,34 @@
+// Full HD monitor
+@media (max-width: 1920px) {
+    .photo1{
+        width: 438px;
+        img{
+            margin-left: 22px;
+            transform: scale(1.235);
+        }
+    }
+    .photo2{
+        width: 545px;
+        img{
+            margin-top: 72px;
+            margin-left: 56px;
+            transform: scale(1.6);
+        }
+    }
+    .photo3{
+        width: 546px;
+        img{
+            transform: scale(1.24);
+            margin-left: -158px;
+            margin-top: 46px;
+        }
+    }
+    .photo4{
+        width: 472px;
+        img{
+            transform: scale(1.36);
+            margin-left: -69px;
+            margin-top: 27px;
+        }
+    }
+}

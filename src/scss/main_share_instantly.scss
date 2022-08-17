@@ -1,0 +1,62 @@
+main .share_instantly{
+    background-color: #262626;
+    height: 734px;
+    overflow: hidden;
+    .container{
+        max-width: 1170px;
+        padding: 0;
+    }
+    .row .image{
+        margin-top: 72px;
+        margin-left: -96px;
+    }
+    .share__content{
+        margin-top: 170px;
+        padding-top: 15px;
+        padding-left: 96px;
+        h3{
+            font-family: 'Montserrat' ,sans-serif;
+            font-size: 44px;
+            line-height: 1.2;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: white;
+        }
+        p{
+            font-family: 'Varela Round', sans-serif;
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 400;
+            color: #aeaeae;
+            margin-top: 22px;
+            letter-spacing: 0.05px;
+            padding-right: 20px;
+        }
+        .youtube__button{
+            margin-top: 51px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 1px;
+            img{
+                width: max-content;
+                height: max-content;
+                &:hover{
+                    @include button__hover;
+                }
+            }
+            p{
+                margin: 0;
+                margin-top: -6px;
+                margin-left: 1px;
+                padding-right: 25px;
+                font-family: 'Varela Round';
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #aeaeae;
+            }
+        }
+    }
+}

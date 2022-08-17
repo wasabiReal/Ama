@@ -1,0 +1,123 @@
+main .taken_with_ama{
+    .twa__text{
+    margin-top: 70px;
+    margin-left: 66px;
+        h3{
+            font-family: 'Montserrat' ,sans-serif;
+            font-size: 48px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: $pink;
+        }
+        p{
+            margin-left: 5px;
+            margin-top: 20px;
+            width: 455px;
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 400;
+            color: $p_color;
+            letter-spacing: 0.05px;
+        }
+    }
+    .twa__photos{
+        display: flex;
+        margin-top: 76px;
+        .photo{
+            height: 519px;
+            display: flex;
+            overflow: hidden;
+            flex-direction: row;
+            position: relative;
+
+            transition: all 0.3s ease-in-out;
+            img{
+                transform: scale(1.235);
+            }
+            @media (min-width: 850px) {
+                &:hover {
+                height: 557px;
+                margin-top: -38px;
+                .photo__likes{
+                    display: flex;
+                    bottom: 0px;
+                }
+            }
+            .photo__likes{
+                transition: all 0.2s ease;
+                }
+            }
+            
+        }
+        .photo1{
+            width: 438px;
+            > img{
+                margin-left: 22px;
+                transform: scale(1.235);
+            }
+        }
+        .photo2{
+            width: 545px;
+            > img{
+                margin-top: 72px;
+                margin-left: 56px;
+                transform: scale(1.6);
+            }
+        }
+        .photo3{
+            width: 546px;
+            > img{
+                transform: scale(1.24);
+                margin-left: -158px;
+                margin-top: 46px;
+            }
+        }
+        .photo4{
+            width: 472px;
+            > img{
+                transform: scale(1.36);
+                margin-left: -69px;
+                margin-top: 27px;
+            }
+        }
+        .photo__likes{
+            display: flex;
+            height: 88px;
+            color: white;
+            position: absolute;
+            background-color: #151515;
+            bottom: -88px;
+            width: 100%;
+            padding: 25px;
+            justify-content: space-between;
+            .quote_likes{
+                margin-left: 7px;
+                margin-top: 7px;
+            }
+            .likes{
+                display: flex;
+                margin-top: 5px;
+                margin-right: 16px;
+                img{
+                margin: 0;
+                float: left;
+                margin-right: 10px;
+                }
+                p{
+                    font-size: 23px;
+                    font-family: 'Montserrat',sans-serif;
+                    color: $pink;
+                    margin: 0;
+                    font-weight: 600;
+                    margin-right: -5px;
+                    margin-top: -2px;
+                }
+            }
+            p{
+                font-size: 17px;
+                font-family: 'Montserrat' ,sans-serif;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,18 @@
+
+// Default and small mobile screens
+
+@media (max-width: 360px) {
+    header .slider .banner__container{
+        h1{
+            left: 10%;
+            font-size: 26px;
+        }
+    }
+    header .slider .banner__container .cta{
+        top: 45%;
+        gap: 30px;
+    }
+    footer .footer__container .right__content input[type=email]{
+        width: min-content;
+    }
+}

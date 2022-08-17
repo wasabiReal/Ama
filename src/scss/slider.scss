@@ -14,13 +14,13 @@
     top: 90%;
     left: 50%;
     margin-left: -28px;
+    .slick-active button{
+        background-color: white;
+        }
 }
 .slider .slick-dots li{
     list-style-type: none;
     margin: 0 4px;
-}
-.slider .slick-dots .slick-active button{
-    background-color: white;
 }
 .slider .slick-dots button{
     font-size: 0;
@@ -31,6 +31,7 @@
     border: 2px solid white;
     border-radius: 50%;
 }
+
 .slick-track{
     display: flex;
 }

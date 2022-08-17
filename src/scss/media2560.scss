@@ -1,0 +1,11 @@
+// Scss rules for 4k monitor
+@media (min-width: 2560px) {
+    main .taken_with_ama .twa__photos .photo {
+        width: 25%;
+        img{
+            width: 100%;
+            margin: 0;
+        }
+        margin: 0;
+    }
+}

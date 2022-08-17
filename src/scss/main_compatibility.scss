@@ -1,0 +1,39 @@
+main .compatibility{
+    background-color: #e7e7e7;
+    height: 444px;
+    .compatibility__content{
+        padding: 87px 70px;
+        font-family: 'Montserrat' ,sans-serif;
+        h3{
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: $p_color;
+            padding-bottom: 5px;
+        }
+        h4{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+            color: $p_color;
+            margin: 0;
+        }
+        hr{
+            border-top: 2px solid rgba(0,0,0,.1);
+        }
+        .compatibility__mobiles{
+            display: flex;
+            gap: 26px;
+            padding-top: 19px;
+            p{
+                width: 450px;
+                font-family: 'Varela Round';
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: $p_color;
+                letter-spacing: 0.05px;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@media (max-width: 1180px) {
+    header .slider .slider__item{
+        .iphone__banner{
+            width: 100%;
+            margin-top: 50px;
+        }
+        h1{
+            left: 200px;
+            font-size: 66px;
+        }
+        .cta{
+            left: 27%;
+        }
+    }
+    header .container .topbar__container{
+        justify-content: space-around;
+    }
+    header .banner__container{
+        height: 600px;
+    }
+    main .compatibility .compatibility__content .compatibility__mobiles p{
+            width: 355px;
+    }
+    main .download {
+        height: max-content;
+        .download__content{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 88px;
+            margin: 0 auto;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+            .content__text .donwload__buttons{
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                a{
+                    width: min-content;
+                    margin: 0 auto;
+                }
+            }
+            .shadow{
+                display: none;
+                opacity: 0;
+            }
+            h2,
+            p{
+                text-align: center;
+            }
+            .content__text .donwload__buttons{
+                margin: 53px auto;
+            }
+        }
+    }
+    main .new_features .slider__comments .phone__features{
+        width: 415px;
+        gap: 15px;
+        .phone__features__text p {  
+            font-size: 14px;
+        }
+    }
+    main .share_instantly{
+        .image{
+            img{
+                width: 100%;
+                margin-left: 100px;
+            }
+        }
+        .slider .slick-dots{
+            top: 50%;
+            left: 50%;
+        }
+    }
+    main .phone__picture img{
+        margin-left: 10px;
+    }
+    main .taken_with_ama .twa__photos .photo {
+        height: 250px;
+        @media (min-width: 850px) {
+            &:hover {
+            height: 268px;
+            margin-top: -18px;
+            transition: all 0.5s ease-in-out;
+            }
+        }
+        
+        .quote_likes{
+            font-size: 12px;
+            margin: 10px 0;
+        }
+    }
+    footer .footer__container{
+        margin: 0 40px;
+    }
+}
